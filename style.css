@@ -154,7 +154,7 @@ main {
   margin-right: 5%;
   margin-bottom: 5%;
   animation: pohyb 8s infinite;
-  filter: drop-shadow(5px 5px 8px #72b01d) grayscale(80%);
+  filter: grayscale(80%) drop-shadow(5px 5px 8px #72b01d);
 }
 
 .page__text a {
@@ -169,9 +169,10 @@ main {
 
 .page__text q {
   font-style: italic;
+  font-size: 1.3rem;
   border-left: 5px solid #72b01d;
   display: block;
-  padding-left: 5%;
+  padding: 1% 0 1% 5%;
 }
 
 .main__text {
