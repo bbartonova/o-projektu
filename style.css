@@ -32,6 +32,10 @@ body {
   justify-content: space-between;
 }
 
+.page_box {
+  background-color: #f3eff5;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -48,7 +52,7 @@ nav {
 ul {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 li {
