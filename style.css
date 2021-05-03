@@ -21,7 +21,7 @@ body {
   color: #f3eff5;
 }
 
-.main_box {
+.main__box {
   max-width: 90%;
   background-color: #0d0a0b;
   margin: 0 auto;
@@ -32,8 +32,16 @@ body {
   justify-content: space-between;
 }
 
-.page_box {
+.page__box {
+  max-width: 90%;
   background-color: #f3eff5;
+  margin: 0 auto;
+  box-shadow: 0px 0px 5px 0px #72b01d;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #0d0a0b;
 }
 
 header {
@@ -42,6 +50,7 @@ header {
   align-items: center;
   padding: 0 5%;
   border-bottom: 1px solid #454955;
+  background-color: #0d0a0b;
 }
 
 nav {
@@ -124,12 +133,46 @@ main {
     border-radius: 60% 100%;
   }
 }
+.page {
+  display: block;
+}
+.page__text {
+  padding: 0 2%;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.page__text h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  color: #72b01d;
+}
+
+.page__text img {
+  max-width: 30%;
+  float: left;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  animation: pohyb 8s infinite;
+  filter: drop-shadow(5px 5px 8px #72b01d) grayscale(80%);
+}
+
+.page__text a {
+  color: #72b01d;
+  text-decoration: none;
+}
+
+.page__text a:hover,
+.page__text a:focus {
+  text-decoration: underline;
+}
 
 .main__text {
   padding: 0 2%;
   width: 50%;
   text-align: center;
 }
+
 .main__text h1 {
   font-family: 'Pacifico', cursive;
   font-size: 3rem;
@@ -146,11 +189,28 @@ main {
   margin: 5px 0;
 }
 
+.gallery {
+  display: flex;
+  padding: 2%;
+}
+
+.gallery img {
+  width: 20%;
+  filter: grayscale(80%);
+}
+
+.gallery img:hover,
+.gallery img:focus {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
 footer {
   color: #f3eff5;
   text-align: center;
   padding: 0.5rem 0;
   border-top: 1px solid #454955;
+  background-color: #0d0a0b;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -176,6 +236,9 @@ footer {
   footer {
     padding: 0 10%;
   }
+  .page__text img {
+    max-width: 40%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -191,6 +254,14 @@ footer {
     padding: 1rem 0;
   }
   .main_box {
+    max-width: 100%;
+  }
+
+  .page__text h1 {
+    text-align: center;
+  }
+  .page__text img {
+    float: none;
     max-width: 100%;
   }
 }
